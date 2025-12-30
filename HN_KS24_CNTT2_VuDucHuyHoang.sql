@@ -41,8 +41,8 @@ insert into Enrollment values
     
 Update Enrollment 
 set greadle =9
-where student_id='SV004';
+where course_id='MH002' and course_id='MH003';
 
-select * from Student;
+select name,email,phone from Student;
  -- Hệ thống không cho xóa vì Course đã liên kết khóa ngoại với Enrollment và đã thêm dữ liệu MH001 vào rồi 
 delete  From Course where course_id='MH001'; 
